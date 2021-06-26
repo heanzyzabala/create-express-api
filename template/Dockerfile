@@ -4,10 +4,10 @@ ENV NODE_ENV production
 
 WORKDIR /usr/app
 
+USER node
+
 COPY --chown=node:node ./dist package*.json ./
 
 RUN npm i --production
-
-USER node
 
 CMD ["node", "index.js"]
