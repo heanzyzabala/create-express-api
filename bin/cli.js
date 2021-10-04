@@ -19,7 +19,7 @@ async function setup() {
 		log(`   ${chalk.cyan('create-express-api')} ${chalk.green('app')}`);
 		log();
 		log(`Type:`);
-		log(`   --help or -h for more commands.`);
+		log(`   --help, -h for more commands.`);
 		log();
 		process.exit(1);
 	}
@@ -30,7 +30,6 @@ async function setup() {
 		log(`   create-express-api ${chalk.green('<project-directory>')}`);
 		log();
 		log('Options:');
-		log('   -h, --help       output usage information');
 		log();
 		process.exit(1);
 	}
@@ -46,7 +45,7 @@ async function setup() {
 			log(
 				`Project directory ${chalk.green(
 					projectName,
-				)} already exists, try using a new directory name.`,
+				)} already exists, try using another directory name.`,
 			);
 			log();
 		} else {
@@ -57,7 +56,7 @@ async function setup() {
 
 	try {
 		log();
-		log(`Creating new project in ${chalk.green(rootDir)}.`);
+		log(`Creating a new project in ${chalk.green(rootDir)}.`);
 		log();
 
 		const spinner = ora({
@@ -84,7 +83,7 @@ async function setup() {
 		spinner.succeed();
 
 		log();
-		log(`Done! Created ${projectName} at ${rootDir}`);
+		log(`Done! Created ${projectName} in ${rootDir}`);
 		log();
 		log('  You can get started by typing:');
 		log();
