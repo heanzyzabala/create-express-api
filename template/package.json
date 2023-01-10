@@ -5,7 +5,7 @@
     "test": "jest test --passWithNoTests --runInBand"
   },
   "dependencies": {
-    "convict": "^6.2.3",
+    "convict": "^6.2.4",
     "convict-format-with-validator": "^6.0.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
